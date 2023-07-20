@@ -44,7 +44,7 @@ body {
 }
 
 .image-container img {
-    height: 90vh;
+    height: 95vh;
     width: 66rem;
     position: absolute;
     right: 0;
@@ -60,19 +60,23 @@ header {
     color: var(--primary-color);
     font-family: Marcellus;
     display: flex;
-    justify-content: space-around;
+    gap: 20rem;
     align-items: center;
 
 }
 
 .logo {
     font-size: 3.5rem;
-    letter-spacing: .3rem;
     cursor: pointer;
 }
 
 .logo h2 {
     font-weight: 400;
+}
+
+
+.menu {
+    display: none;
 }
 
 .nav ul {
@@ -109,7 +113,7 @@ main {
 .headline {
     width: 50%;
     font-family: 'Lato';
-    font-size: 4rem;
+    font-size: 3.8rem;
 }
 
 .headline span {
@@ -163,4 +167,93 @@ form {
 .subs-btn:hover {
     color: var(--secondary-color);
     background-color: var(--primary-color);
+}
+
+@media (max-width: 1150px) {
+
+    .app {
+        margin: 0 7rem;
+    }
+
+    .image-area {
+        width: 25%
+    }
+
+    .image-container img {
+        width: 40rem;
+    }
+
+    header {
+        gap: 5rem;
+    }
+
+    .headline {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .app {
+        margin: 0 2rem;
+    }
+
+    header {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav ul {
+        gap: 3rem;
+    }
+
+    .image-area {
+        display: none;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    main .headline,
+    .main-text {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .headline {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .menu {
+        display: block
+    }
+
+    .main-text {
+        font-size: 1.4rem;
+    }
+
+    form {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .headline {
+        font-size: 1.8rem;
+    }
 }
