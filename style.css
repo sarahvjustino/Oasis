@@ -10,8 +10,10 @@
     font-size: 62.5%;
     --background-dark: #171717;
     --background-light: #788AA3;
+    --input-background: #d3d3d333;
     --primary-color: #FFF;
     --secondary-color: #8FA3BF;
+    --text-color: #d3d3d3cc;
 }
 
 body {
@@ -19,6 +21,12 @@ body {
     font-size: 1.6rem;
     background-color: var(--background-dark);
 }
+
+.app {
+    margin: 0 9rem;
+}
+
+/* ASIDE IMAGE */
 
 .image-area {
     position: absolute;
@@ -44,6 +52,8 @@ body {
     transition: .5s;
 }
 
+/* HEADER */
+
 header {
     width: 60%;
     padding: 2rem;
@@ -56,11 +66,13 @@ header {
 }
 
 .logo {
-    margin-left: 9rem;
     font-size: 3.5rem;
-    font-weight: 400;
     letter-spacing: .3rem;
     cursor: pointer;
+}
+
+.logo h2 {
+    font-weight: 400;
 }
 
 .nav ul {
@@ -82,4 +94,73 @@ header {
 
 .nav ul li:first-child {
     color: var(--secondary-color);
+}
+
+/* MAIN */
+
+main {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--primary-color);
+}
+
+.headline {
+    width: 50%;
+    font-family: 'Lato';
+    font-size: 4rem;
+}
+
+.headline span {
+    color: var(--secondary-color);
+}
+
+.main-text {
+    font-family: Marcellus;
+    margin: 2rem 0;
+    width: 40%;
+    text-align: justify;
+    color: var(--text-color);
+}
+
+form {
+    position: relative;
+    width: 40%;
+}
+
+#input-email {
+    font-family: "Lato";
+    padding: 1.5rem 2rem;
+    border-radius: 999px;
+    border: none;
+    width: 100%;
+    background-color: var(--input-background);
+    color: var(--text-color);
+    outline-color: var(--secondary-color);
+}
+
+#input-email::placeholder {
+    color: var(--text-color);
+}
+
+.subs-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding: 1.5rem 2rem;
+    border-radius: 999px;
+    border: none;
+    font-family: "Lato";
+    font-weight: 800;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: .5s ease-in;
+}
+
+.subs-btn:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
