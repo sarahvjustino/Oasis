@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Marcellus&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --background-dark: #171717;
+    --background-light: #788AA3;
+    --primary-color: #FFF;
+    --secondary-color: #8FA3BF;
+}
+
+body {
+    position: relative;
+    font-size: 1.6rem;
+    background-color: var(--background-dark);
+}
+
+.image-area {
+    position: absolute;
+    height: 100vh;
+    width: 30%;
+    background-color: var(--background-light);
+    right: 0;
+    top: 0;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container img {
+    height: 90vh;
+    width: 66rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: .5s;
+}
+
+header {
+    width: 60%;
+    padding: 2rem;
+    color: var(--primary-color);
+    font-family: Marcellus;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.logo {
+    margin-left: 9rem;
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: .3rem;
+    cursor: pointer;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    list-style: none;
+    font-size: 1.8rem;
+}
+
+.nav ul li {
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.nav ul li:hover {
+    color: var(--secondary-color);
+}
+
+.nav ul li:first-child {
+    color: var(--secondary-color);
+}
